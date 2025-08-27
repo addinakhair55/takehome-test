@@ -21,9 +21,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/products/{id}', [ProductController::class, 'show']);
 
     Route::middleware('role:admin')->group(function () {
-        Route::post('/products', [ProductController::class, 'store']);   // create
-        Route::put('/products/{id}', [ProductController::class, 'update']); // update
-        Route::delete('/products/{id}', [ProductController::class, 'destroy']); // delete
+        Route::post('/products', [ProductController::class, 'store']);   
+        Route::put('/products/{id}', [ProductController::class, 'update']);
+        Route::delete('/products/{id}', [ProductController::class, 'destroy']);
     });
 });
 

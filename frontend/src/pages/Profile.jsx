@@ -12,7 +12,6 @@ export default function Profile() {
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 md:p-8 font-sans">
       <div className="w-full flex flex-col gap-6">
         <div className="rounded-xl shadow-lg bg-white p-4 sm:p-6 lg:p-8 transition-all">
-          {/* Header */}
           <div className="flex justify-between items-center mb-4 sm:mb-6">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">
               {mode === "view" && "Profile"}
@@ -30,7 +29,6 @@ export default function Profile() {
             )}
           </div>
 
-          {/* View Mode */}
           {mode === "view" && (
             <div className="space-y-4 sm:space-y-6 text-gray-700 text-sm sm:text-base">
               <div className="flex flex-col sm:flex-row sm:justify-between gap-2">
@@ -50,10 +48,8 @@ export default function Profile() {
             </div>
           )}
 
-          {/* Edit Profile */}
           {mode === "edit" && <EditProfile onClose={() => setMode("view")} />}
 
-          {/* Change Password */}
           {mode === "password" && <ChangePassword onClose={() => setMode("view")} />}
         </div>
       </div>

@@ -75,7 +75,6 @@ export default function Register() {
           Sign Up
         </h2>
 
-        {/* Full Name */}
         <div className="flex flex-col mb-5 relative">
           <label className="text-gray-500 mb-2 text-sm" htmlFor="name">
             Full Name
@@ -97,7 +96,6 @@ export default function Register() {
           {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
         </div>
 
-        {/* Email */}
         <div className="flex flex-col mb-5 relative">
           <label className="text-gray-500 mb-2 text-sm" htmlFor="email">
             Email Address
@@ -119,7 +117,6 @@ export default function Register() {
           {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
         </div>
 
-        {/* Password */}
         <div className="flex flex-col mb-6 relative">
           <label className="text-gray-500 mb-2 text-sm" htmlFor="password">
             Password

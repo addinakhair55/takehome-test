@@ -30,9 +30,7 @@ export default function Products() {
     let { name, value } = e.target;
 
     if (name === "price") {
-      // hilangkan semua karakter non-angka
       const numericValue = value.replace(/\D/g, "");
-      // format dengan titik ribuan
       value = numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
 

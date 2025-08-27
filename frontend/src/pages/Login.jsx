@@ -15,7 +15,6 @@ export default function Login() {
     let newErrors = { email: "", password: "", global: "" };
     let hasError = false;
 
-    // validasi kosong
     if (!form.email) {
       newErrors.email = "Emain is required!";
       hasError = true;
